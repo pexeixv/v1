@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html translate="no">
+        <head>
+          <meta charset="utf-8">
+          <meta name="google" content="notranslate">
+          <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+          <link rel="icon" type="image/svg+xml" href="../img/fav.svg">
+          <title>Gavin Pereira</title>
+          <meta name='viewport' content='width=device-width, initial-scale=1'>
+          <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+          <meta name="description" content="Graphic Designer">
+          <link href="css/style.css" rel="stylesheet">
+          <script>
+                function copy(text) 
+                    {
+                        var textarea = document.createElement("textarea");
+                        textarea.value = text;
+                        document.body.appendChild(textarea);
+                        textarea.select();
+                        document.execCommand("copy");
+                        document.body.removeChild(textarea);
+                        alert("E-mail address has been copied to clipboard.");
+                        return false;
+                    }
+        </script>
+        </head>
+    <body>
+      <header class="text-gray-700 body-font headershadow" style="width: 100%; position: fixed; top: 0px; background-color: white; z-index: 99;">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="width: inherit; margin: 0px auto;">
+          <a href="index.html"><img src="img/logo.svg" style="height:75px"></a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+            <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
+            <a href="portfolio.html" class="mr-5 hover:text-gray-900">Portfolio</a>
+            <a href="#" class="mr-5 hover:text-gray-900 currentpage">Contact</a>
+          </nav>
+        </div>
+    </header>
+        <section class="text-gray-700 body-font relative">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" style="margin-top: 50px;">Write to me</h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base"></p>
+                </div>
+                
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+
+                    <form class="flex flex-wrap -m-2" method="POST" data-netlify="true">
+                    
+                        <div class="p-2 w-1/2">
+                            <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Name" name="name" type="text"
+                            style="columns: 500%;">
+                        </div>
+                        
+                        <div class="p-2 w-1/2">
+                             <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Email" name="email" type="email">
+                        </div>
+                        
+                        <div class="p-2 w-full">
+                             <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message" name="message" type="text"></textarea>
+                        </div>
+
+                        <div id="spam">
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
+                        
+                        <div class="p-2 w-full">
+                            <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+                        </div>
+
+                    </form>
+                     
+                    <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                        <button onclick="copy('gavinpereiradesign@gmail.com')">
+                          <span style="font-size: 12px;">Click here to copy my email address</span><br>
+                            gavinpereiradesign@gmail.com
+                        </button><br><br>
+                        <a href="https://wa.me/918888253992">
+                            <span style="font-size: 12px;">Click here to WhatsApp me</span><br>
+                            +91 8888 253992
+                        </a>
+                        <p class="leading-normal my-5">
+                            Vasco-da-Gama
+                            <br>Goa, India
+                            <br>403802
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="text-gray-700 body-font">
+          <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <img src="img/logo.svg" style="height:35px">
+            <span class="ml-3 text-xl">Gavin Pereira</span>
+            <div class="copyright">
+              <p class="text-sm text-gray-500 sm:ml-4   sm:py-2 sm:mt-0 mt-4">©2020 | All rights reserved.
+              </p>
+            </div>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </footer>
+    </body>
+    </html>
