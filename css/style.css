@@ -24,7 +24,7 @@ h2{
   .tech-slideshow > div {
 	height: 200px;
 	width: 2526px;
-	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+	background: url(https://i.ibb.co/yRL2MSq/collage.jpg);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -40,9 +40,7 @@ h2{
 	background-position: 0 -200px;
 	animation: moveSlideshow 15s linear infinite;
   }
-  .tech-slideshow:hover .mover-2 {
-	opacity: 1;
-  }
+
   
   @keyframes moveSlideshow {
 	100% { 
