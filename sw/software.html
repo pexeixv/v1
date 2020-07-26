@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>software</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <style>
+        *,*::before,*::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            font-family: tahoma;
+            height: 50%;
+            width: 100%;
+            position: relative;
+            display: table;
+            margin: 0;
+        }
+
+        .container {
+            height: 100%;
+            width: 33%;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        /* .container:first-of-type{
+            background-color: #ffeb3b;
+        } */
+        .container:first-of-type .rail {
+            stroke: #36291e;
+        }
+
+        .container:first-of-type .progress {
+            stroke: #ff7919;
+        }
+
+        .container:first-of-type .percentage {
+            colour: #101010;
+        }
+
+
+        /* .container:nth-of-type(2){
+            background-color: #ed5752;
+        } */
+        .container:nth-of-type(2) .rail {
+            stroke: #2e2e4d;
+        }
+
+        .container:nth-of-type(2) .progress {
+            stroke: #2554ff;
+        }
+
+        .container:nth-of-type(2) .percentage {
+            colour: #101010;
+        }
+
+
+        /* .container:nth-of-type(3){
+            background-color: #f1f3ce;
+        } */
+        .container:nth-of-type(3) .rail {
+            stroke: #281b36;
+        }
+
+        .container:nth-of-type(3) .progress {
+            stroke: #d9b2ff;
+        }
+
+        .container:nth-of-type(3) .percentage {
+            colour: #101010;
+        }
+
+        /* .container:nth-of-type(4){
+            background-color: #009788;
+        } */
+        .container:nth-of-type(4) .rail {
+            stroke: #fff;
+        }
+
+        .container:nth-of-type(4) .progress {
+            stroke: #ffeb3b;
+        }
+
+        .container:nth-of-type(4) .percentage {
+            colour: #101010;
+        }
+
+        .container:nth-of-type(4) {
+            display: none;
+        }
+
+        .gauge-container {
+            display: inline-block;
+            position: relative;
+            width: 70%;
+        }
+
+        .gauge-container .gauge {
+            position: relative;
+            display: block;
+
+        }
+
+        .gauge-container .gauge circle {
+            stroke-width: 15;
+        }
+
+        .gauge-container .gauge .rail {
+            fill: transparent;
+        }
+
+        .gauge-container .center {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 300;
+            color: white;
+        }
+
+        .gauge-container .center .percentage {
+            font-size: 2vh;
+        }
+
+        .gauge-container .center .percentSymbol {
+            font-size: 0.8em;
+        }
+
+        .gauge-container .center .value {
+            font-size: 1.9em;
+        }
+
+        span.value {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .value{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="gauge-container">
+            <img src="ai.svg" alt="" style=" height: 240px; position: absolute; z-index: 5; top: 40px; left: 40px;">
+            <svg class="gauge" viewBox="0 0 150 150">
+
+                <circle class="rail" r="67" cx="75" cy="75"></circle>
+                <circle class="progress" r="67" data-target="83" cx="75" cy="75"></circle>
+
+            </svg>
+            <span class="center percentage">
+                <span class="value adobeai">0</span>
+            </span>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="gauge-container">
+            <img src="ps.svg" alt="" style=" height: 240px; position: absolute; z-index: 5; top: 40px; left: 40px;">
+            <svg class="gauge" viewBox="0 0 150 150">
+                <circle class="rail" r="67" cx="75" cy="75"></circle>
+                <circle class="progress" r="67" data-target="55" cx="75" cy="75"></circle>
+            </svg>
+            <span class="center percentage">
+                <span class="value adobeps">0</span>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="gauge-container">
+            <img src="ae.svg" alt="" style=" height: 240px; position: absolute; z-index: 5; top: 40px; left: 40px;">
+            <svg class="gauge" viewBox="0 0 150 150">
+                <circle class="rail" r="67" cx="75" cy="75"></circle>
+                <circle class="progress" r="67" data-target="30" cx="75" cy="75"></circle>
+            </svg>
+            <span class="center percentage">
+                <span class="value adobeae">0</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="gauge-container">
+            <svg class="gauge" viewBox="0 0 150 150">
+
+                <circle class="rail" r="67" cx="75" cy="75"></circle>
+
+                <circle class="progress" r="67" data-target="75" cx="75" cy="75"></circle>
+
+            </svg>
+            <span class="center percentage">
+                <span class="value">0</span>
+                <span class="percentageSymbol">%</span>
+            </span>
+        </div>
+    </div>
+
+    <script src="same.js"></script>
+
+</body>
+</html>
