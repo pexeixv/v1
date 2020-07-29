@@ -1,13 +1,13 @@
 
   
   .containerx {
-    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
   }
   
   .progress-bar {
-    margin: 0 0 10px;
+    width: 350px;
+    margin: 2px;
     overflow: hidden;
     padding-right: 24px; /* Separate bars from container */
   }
