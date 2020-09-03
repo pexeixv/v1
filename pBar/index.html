@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <style>
+        .appWithName
+        {
+            justify-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            align-items: center;
+            
+        }
+
+        .adobeApp{
+            width: 70%;
+        }
+
+        .appName{
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 16px;
+        }
+
+        span{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+
+
+
+    <div class="adobeApps" style="display: flex; justify-content: space-evenly;">
+        <div class="appWithName">
+            <div class="adobeApp" id="ai"></div>
+            <span class="appName">Adobe Illustrator</span>
+        </div>
+        <div class="appWithName">
+            <div class="adobeApp" id="ps"></div>
+            <span class="appName">Adobe Photoshop</span>
+        </div>
+        <div class="appWithName">
+            <div class="adobeApp" id="ae"></div>
+            <span class="appName">Adobe After Effects</span>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
