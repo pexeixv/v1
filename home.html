@@ -22,8 +22,17 @@
    <link href="css/style.css" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
    <style>
+      *{
+         outline: 0.5px solid red;
+      }
+
+      #gallerySection img {
+         transition: all 400ms ease-in-out;
+         border-radius: 5px;
+      }
       #gallerySection img:hover {
-         transform: scale(1.02);
+         transform: scale(1.03);
+         box-shadow: 0 0 25px 5px rgba(0,0,0,0.1)
       }
    </style>
 </head>
