@@ -107,8 +107,7 @@ blockquote::after{
   } */
 
   .striked {
-	font-size: 1em;
-	line-height: 1em;
+	font-weight: bolder;
 	position: relative;
   }
   .striked::after {
@@ -124,6 +123,11 @@ blockquote::after{
 	top: 50%;
 	transform: translateY(-50%);
   }
+
+footer{
+	margin-top: 50px;
+	border-top: 7px solid rgb(235, 235, 235);
+}
 
   svg{width:30%;}
 
