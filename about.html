@@ -22,7 +22,18 @@
    <link href="css/style.css" rel="stylesheet">
    <link rel="stylesheet" href="pBar/pBar.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+   <style>
+      .service{
+         flex-grow: 0;
+         flex-shrink: 0;
+         flex-basis: 25%;
+      }
+      @media screen and ( max-width: 650px ){
+         .service{
+           flex-basis: 50%;
+         }
+      }
+   </style>
 </head>
 
 <body>
@@ -70,10 +81,11 @@
 
       <div class="container px-5 py-24 mx-auto" style="padding-top: 30px;">
 
-         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4"
+         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 serviceWrap"
             style=" display: flex; flex-flow: row wrap; justify-content: space-around;">
+            
 
-            <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
+            <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center service"
                style="padding: 0 10px; width: max-content; margin: 0; width: 155px;">
                <div
                   class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
@@ -85,8 +97,20 @@
                </div>
             </div>
 
+            <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center service"
+               style="padding: 0 10px; width: max-content; margin: 0; width: 155px;">
+               <div
+                  class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                  <img src="img/html.svg" alt="" srcset="" style="padding: 22px;">
+               </div>
+               <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="font-size: 16px;">Web Design
+                  </h2>
+               </div>
+            </div>
 
-            <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
+
+            <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center service"
                style="padding: 0 10px; width: max-content;  margin: 0; width: 155px;">
                <div
                   class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
@@ -99,7 +123,7 @@
             </div>
 
 
-            <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
+            <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center service"
                style="padding: 0 10px; width: max-content; margin: 0; width: 155px;">
                <div
                   class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
@@ -107,17 +131,6 @@
                </div>
                <div class="flex-grow">
                   <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="font-size: 16px;">Digital Art
-                  </h2>
-               </div>
-            </div>
-            <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
-               style="padding: 0 10px; width: max-content; margin: 0; width: 155px;">
-               <div
-                  class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-                  <img src="img/html.svg" alt="" srcset="" style="padding: 22px;">
-               </div>
-               <div class="flex-grow">
-                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="font-size: 16px;">Web Design
                   </h2>
                </div>
             </div>
