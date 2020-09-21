@@ -23,10 +23,47 @@
    <link href="css/style.css" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
+<style>
+   .PBWrapper {
+      display: flex;
+      height: 50px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 80px;
+   }
+
+   .PBContent {
+      height: 100%;
+      display: flex;
+      width: 250px;
+      align-items: center;
+      justify-content: space-around;
+   }
+
+   .PButtons {
+      background: rgba(67, 243, 183, .7);;
+      height: 50px;
+      width: 80px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+   }
+
+   .PButtons img {
+      height: 70%;
+   }
+
+   .PBContent a:nth-of-type(1) img{
+      transform: rotate(180deg);
+   }
+</style>
 
 <body>
 
-   
+
    <header class="text-gray-700 body-font header headerProps">
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
          style="width: inherit; margin: 0px auto;">
@@ -45,7 +82,7 @@
 
 
    <section class="text-gray-700 body-font">
-      <div class="container px-5 py-24 mx-auto" style="margin-top: 100px;">
+      <div class="container px-5 py-24 mx-auto" style="margin-top: 100px; padding-bottom: 40px;">
          <div class="flex flex-wrap -m-4">
 
 
@@ -128,16 +165,22 @@
    </section>
 
 
-   <div style="text-align:center; margin-bottom: 50px;">
-      <button
-         class="mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-         style="margin-right: 10px; font-family: sans-serif; background-color: #000;">
-         <a href="#" style="  align-self: center;">&lt;</a></button>
-      <button
-         class="mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-         style="margin-right: 10px; font-family: sans-serif;  align-self: center; background-color: #000;">
-         <a href="#" style="align-self: center;">&gt;</a></button>
+
+   <div class="PBWrapper">
+      <div class="PBContent">
+         <a href="#">
+            <div class="PButtons">
+               <img src="img/arrow-solid.svg" alt="" srcset="">
+            </div>
+         </a>
+         <a href="#">
+            <div class="PButtons">
+               <img src="img/arrow-solid.svg" alt="" srcset="">
+            </div>
+         </a>
+      </div>
    </div>
+
 
 
    <footer class="text-gray-700 body-font">
