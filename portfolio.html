@@ -60,6 +60,53 @@
    .PBContent a:nth-of-type(1) img {
       transform: rotate(180deg);
    }
+
+   section.portfolio {
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 20px;
+
+   }
+
+   .portItems {
+      height: fit-content;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: repeat(3, 30%);
+      grid-gap: 30px;
+      margin: 100px 0 50px;
+   }
+
+   .portItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgb(235, 235, 235);
+      border-radius: 10px;
+      overflow: hidden;
+   }
+   .portItem h3{
+      margin: 8px 0;
+   }
+   .portItem img {
+      width: 100%;
+   }
+   @media screen and (max-width: 640px){
+      section.portfolio{
+         padding: 0 30px;
+      }
+      .portItems{
+         grid-template-columns: repeat(2, 50%);
+         grid-gap: 20px;
+      }
+   }
 </style>
 
 <body>
@@ -85,8 +132,6 @@
    <section class="text-gray-700 body-font">
       <div class="container px-5 py-24 mx-auto" style="margin-top: 100px; padding-bottom: 40px;">
          <div class="flex flex-wrap -m-4">
-
-
             <div class="xl:w-1/4 md:w-1/2 p-4">
                <img class="h-40 rounded w-full object-cover object-center mb-3" src="https://dummyimage.com/720x400"
                   alt="content">
@@ -159,9 +204,88 @@
                <h3 class="tracking-widest niceGreenText text-xs font-medium title-font">SUBTITLE</h3>
                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
             </div>
-
-
          </div>
+      </div>
+   </section>
+
+
+
+
+   <section class="portfolio">
+      <div class="portItems">
+         <div class="portItem">
+            <img src="https://dummyimage.com/360x200" alt="">
+            <div>
+               <h3>Title of Type H3</h3>
+            </div>
+         </div>
+         <div class="portItem">
+            <img src="https://dummyimage.com/360x200" alt="">
+            <div>
+               <h3>Title of Type H3</h3>
+            </div>
+         </div>
+         <div class="portItem">
+            <img src="https://dummyimage.com/360x200" alt="">
+            <div>
+               <h3>Title of Type H3</h3>
+            </div>
+         </div>
+         <div class="portItem">
+            <img src="https://dummyimage.com/360x200" alt="">
+            <div>
+               <h3>Title of Type H3</h3>
+            </div>
+         </div>
+         <div class="portItem">
+            <img src="https://dummyimage.com/360x200" alt="">
+            <div>
+               <h3>Title of Type H3</h3>
+            </div>
+         </div>
+         <div class="portItem">
+            <img src="https://dummyimage.com/360x200" alt="">
+            <div>
+               <h3>Title of Type H3</h3>
+            </div>
+         </div>
+         <div class="portItem">
+            <img src="https://dummyimage.com/360x200" alt="">
+            <div>
+               <h3>Title of Type H3</h3>
+            </div>
+         </div>
+         <div class="portItem">
+            <img src="https://dummyimage.com/360x200" alt="">
+            <div>
+               <h3>Title of Type H3</h3>
+            </div>
+         </div>
+         <div class="portItem">
+            <img src="https://dummyimage.com/360x200" alt="">
+            <div>
+               <h3>Title of Type H3</h3>
+            </div>
+         </div>
+         <div class="portItem">
+            <img src="https://dummyimage.com/360x200" alt="">
+            <div>
+               <h3>Title of Type H3</h3>
+            </div>
+         </div>
+         <div class="portItem">
+            <img src="https://dummyimage.com/360x200" alt="">
+            <div>
+               <h3>Title of Type H3</h3>
+            </div>
+         </div>
+         <div class="portItem">
+            <img src="https://dummyimage.com/360x200" alt="">
+            <div>
+               <h3>Title of Type H3</h3>
+            </div>
+         </div>
+
       </div>
    </section>
 
@@ -187,13 +311,13 @@
    <footer>
       <div class="nameDiv">
          <a href="#">
-         <img src="img/logo.svg">
-         <span>Gavin Pereira</span></a>
+            <img src="img/logo.svg">
+            <span>Gavin Pereira</span></a>
       </div>
       <div class="keyboard">
          <p>
             <strong>THIS WEBSITE IS MADE WITH <span class="striked">LOVE</span><br>A KEYBOARD BY GAVIN
-            PEREIRA</strong>
+               PEREIRA</strong>
          </p>
       </div>
       <div class="instagram">
