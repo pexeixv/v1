@@ -124,10 +124,89 @@ blockquote::after{
 	transform: translateY(-50%);
   }
 
-footer{
+.footer{
 	margin-top: 50px;
 	border-top: 7px solid rgb(235, 235, 235);
 }
+
+
+footer{
+	display: flex;
+	flex-direction: row;
+	height: 100px;
+	width: 100%;
+	padding: 32px 50px;
+	align-items: center;
+	justify-content: space-between;
+	background: rgb(243, 243, 243);
+	border-top: 7px solid rgb(226, 226, 226);
+}
+.nameDiv{
+	height: 100%;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.nameDiv img{
+	height: 100%;
+	margin-right: 5px;
+	width: auto;
+}
+.nameDiv span{
+	text-align: center;
+	color: rgb(41, 41, 41);
+}
+
+.keyboard{
+	color: rgb(146, 146, 146);
+	font-size: 13px;
+}
+.instagram{
+	height: 100%;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.instagram a{
+	height: 100%;
+	width: auto;
+}
+.instagram img{
+	height: 100%;
+	width: auto;
+}
+
+
+@media screen and (max-width: 700px){
+	footer{
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 20px;
+		height: 170px;
+	}
+	.nameDiv{
+		flex-direction: column;
+		margin-bottom: 5px;
+		height: 50px;
+	}
+	.keyboard{
+		margin-bottom: 5px;
+	}
+	.nameDiv img{
+		height: 50%;
+	}
+	.instagram a{
+		height: 80%;
+	}
+}
+
+
+
+
+
+
 
   svg{width:30%;}
 
