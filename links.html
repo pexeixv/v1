@@ -58,6 +58,10 @@
         a{
             text-decoration: none;
             color: white;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            justify-content: center;
         }
         li{
             text-align: center;
@@ -68,16 +72,28 @@
 
         header{
             margin: auto;
-
         }
 
+        #hero{
+            width: 8rem;
+            height: 8rem;
+            margin: auto;
+        }
+        @media screen and (max-width: 600px){
+            #hero{
+                width: 96px;
+                height: 96px;
+            }
+        }
         img{
             border-radius: 50%;
             margin: auto;
+            height: 100%;
+            width: 100%;
         }
 
         #content{
-            margin: 40px auto;
+            margin: 20px auto;
         }
 
         body{
@@ -88,11 +104,6 @@
             margin-top: 20px;
             font-size: 2rem;
             color: grey;
-        }
-
-        #hero{
-            width: 96px;
-            margin: auto;
         }
 
         h1{
@@ -118,7 +129,7 @@
     <div id="wrapper">
         <header>
             <div id="hero">
-                <img src="https://dummyimage.com/96x96/6fffae/000000" alt="" srcset="">
+                <img src="img/gavinSq.jpg" alt="" srcset="">
             </div>
             <div id="name">
                 <h1>Gavin Pereira</h1>
@@ -126,34 +137,20 @@
         </header>
 
         <div id="content">
-            <ul>
-                <a href="home.html">
-                    <li class="links">
+                <a href="index.html" class="links">
                     Portfolio Website
-                    </li>
                 </a>
-                <a href="https://instagram.com/gavinpereira.in">
-                    <li class="links">
+                <a href="https://instagram.com/gavinpereira.in" class="links">
                     Instagram
-                    </li>
                 </a>
-                <a href="https://instagram.com/gavinpereira.in">
-                    <li class="links">
+                <a href="https://instagram.com/gavinpereira.in" class="links">
                     Personal Instagram
-                    </li>
-                </a>
-                <a href="https://facebook.com/pexeixv">
-                    <li class="links">
+                <a href="https://facebook.com/pexeixv" class="links">
                     Facebook
-                    </li>
                 </a>
-                <a href="https://wa.me/918888253992/">
-                    <li class="links">
+                <a href="https://wa.me/918888253992/" class="links">
                     Text me on WhatsApp
-                    </li>
                 </a>
-                
-            </ul>
         </div>
     </div>
 
