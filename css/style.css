@@ -74,7 +74,9 @@ body{
  }
 
 blockquote{
-	max-width: 50vw;
+	margin: auto;
+	width: min
+	padding: 5px;
 }
 /* blockquote::before{
 	content: '\f10d';
