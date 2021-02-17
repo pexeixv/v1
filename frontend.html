@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Portfolio | Gavin Pereira</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/fav/favicon.ico">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <style>
+        @font-face {
+            font-family: 'productsans';
+            src: url("../font/ProductSansRegular.ttf") format('truetype');
+            src: url("../font/ProductSansRegular.woff") format('woff');
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'productsans';
+            src: url("../font/ProductSansBold.ttf");
+            font-style: bold;
+        }
+
+        .links {
+            font-family: 'Product Sans', sans-serif;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        ol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ol li a {
+            font-size: 1.3rem;
+            padding: 0.5em 1em;
+            background: rgba(34, 187, 136, 0.92);
+            border-radius: 200px;
+        }
+
+        ol li {
+            margin: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-gray-700 body-font header headerProps" style="overflow-x: hidden;">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+            style="width: inherit; margin: 0px auto;">
+            <a href="index.html">
+                <img src="img/logo.svg" style="height:75px">
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="mr-5 hover:text-gray-900 currentpage">Home</a>
+                <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
+                <a href="portfolio.html" class="mr-5 hover:text-gray-900">Portfolio</a>
+                <a href="contact.html" class="mr-5 hover:text-gray-900">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="links">
+        <h1>Frontend Portfolio</h1>
+        <ol>
+            <li><a target=_blank href="//ms.gavinpereira.in">
+                    Microsoft
+                </a></li>
+            <li><a target=_blank href="//room.gavinpereira.in">
+                    Room Furniture
+                </a></li>
+            <li><a target=_blank href="//sure.gavinpereira.in">
+                    Insure Insurance
+                </a></li>
+            <li><a target=_blank href="//bank.gavinpereira.in">
+                    Easybank
+                </a></li>
+        </ol>
+    </section>
+
+
+</body>
+
+</html>
