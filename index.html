@@ -15,24 +15,47 @@
    <meta name="theme-color" content="#ffffff">
    <title>Gavin Pereira</title>
    <meta name='viewport' content='width=device-width, initial-scale=1'>
-   <meta name="description" content="Gavin Pereira, a Freelance Graphic/Web Designer from Goa, India specialised in Minimalist design.">
-   <meta name="keywords" content="graphic designer, graphic design, minimalist designer, graphic designers in goa, graphic designers near me">
+   <meta name="description"
+      content="Gavin Pereira, a Freelance Graphic/Web Designer from Goa, India specialised in Minimalist design.">
+   <meta name="keywords"
+      content="graphic designer, graphic design, minimalist designer, graphic designers in goa, graphic designers near me">
    <meta name="author" content="Gavin Pereira">
    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
    <style>
-
       #gallerySection img {
          transition: all 400ms ease-in-out;
          border-radius: 5px;
       }
+
       #gallerySection img:hover {
          transform: scale(1.03);
-         box-shadow: 0 0 25px 5px rgba(0,0,0,0.1)
+         box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1)
+      }
+
+      .testie {
+         flex: 1;
+         max-width: 400px;
+         text-align: left;
+      }
+
+      .testi_container {
+         width: 90%;
+         max-width: 1100px;
+         margin: 0 auto;
+         justify-content: space-between;
+      }
+
+      @media screen and (max-width:600px) {
+         .testi_container {
+            flex-direction: column;
+         }
+
       }
    </style>
+
 </head>
 
 <body>
@@ -156,14 +179,16 @@
          my clients say</h1>
       <div class="w-16 h-1 rounded-full niceGreenBG" style="margin: auto; margin-bottom: -30px;"></div>
       <div class="container px-5 py-24 mx-auto">
-         <div class="flex  -m-4" style="justify-content: space-evenly;">
+         <div class="flex  -m-4 testi_container" style="justify-content: space-evenly;">
             <!-- add class "flexwrap" to wrap the testi divs -->
-            <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+
+            <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 testie">
                <div class="h-full text-center">
                   <img alt="testimonial"
                      class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
                      src="img/nayden.jpg" style="margin-bottom: 1rem;">
-                  <blockquote style="text-align: justify; text-align-last: center;">It was really nice working with Gavin on my logo. He was very professional and patient. He prepared
+                  <blockquote style="text-align: justify;">It was really nice working with
+                     Gavin on my logo. He was very professional and patient. He prepared
                      concepts based on my needs. The quality of his work is exceptional. I was very satisfied with the
                      final product.</blockquote>
                   <span class="inline-block h-1 w-10 rounded mt-6 mb-4"
@@ -174,13 +199,15 @@
             </div>
 
 
-            <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+            <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 testie">
                <div class="h-full text-center">
                   <img alt="testimonial"
                      class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
                      src="img/aaron.jpg" style="margin-bottom: 1rem;">
-                  <blockquote style="text-align: justify; text-align-last: center;">Gavin is an amazing & creative graphic designer. I'm
-                     glad to be associated with him & the quality he delivers. Highly recommend his service.</blockquote>
+                  <blockquote style="text-align: justify;">Gavin is an amazing & creative
+                     graphic designer. I'm
+                     glad to be associated with him & the quality he delivers. Highly recommend his service.
+                  </blockquote>
                   <span class="inline-block h-1 w-10 rounded mt-6 mb-4 niceGreenBG" style="margin: 8px 0 5px"></span>
                   <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">AARON RODRIGUES</h2>
                   <p class="text-gray-500">Owner, ADR Pro Systems<br>& ADR Music Studio</p>
@@ -200,20 +227,24 @@
       <div class="mover-2"></div>
    </div>
 
-   <h1 style="display: none;">Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira </h1>
+   <h1 style="display: none;">Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin
+      Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin
+      Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin
+      Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin
+      Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira </h1>
 
 
 
    <footer>
       <div class="nameDiv">
          <a href="#">
-         <img src="img/logo.svg">
-         <span>Gavin Pereira</span></a>
+            <img src="img/logo.svg">
+            <span>Gavin Pereira</span></a>
       </div>
       <div class="keyboard">
          <p>
             <strong>THIS WEBSITE IS MADE WITH&nbsp;<span class="striked">LOVE</span><br>A KEYBOARD BY GAVIN
-            PEREIRA</strong>
+               PEREIRA</strong>
          </p>
       </div>
       <div class="instagram">
@@ -224,7 +255,7 @@
    </footer>
 
 
-<script src="js/script.js"></script>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
