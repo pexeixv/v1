@@ -126,6 +126,24 @@
     }
 
     @media (max-width:800px) {
+        .main_wrapper {
+            height: 100%;
+            /* gap: 0; */
+        }
+
+        .main_right {
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 50%;
+        }
+
+        .main_left {
+            justify-content: flex-start;
+            order: 2;
+            min-height: 50%;
+        }
 
         h1 {
             font-size: 4rem;
