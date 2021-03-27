@@ -119,6 +119,9 @@ h1 {
     margin-top: 2em;
     /* display: flex; */
 }
+.main_logo img:hover{
+    transform: translateY(-3px);
+}
 /* .main_logos img{
     width: fit-content
 } */
