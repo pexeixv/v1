@@ -21,7 +21,10 @@
       content="graphic designer, graphic design, minimalist designer, graphic designers in goa, graphic designers near me">
    <meta name="author" content="Gavin Pereira">
    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
+   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet"> -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
    <link href="css/style.css" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
    <style>
@@ -67,7 +70,8 @@
 
 
 
-   <header class="text-gray-700 body-font header headerProps" style="overflow-x: hidden;">
+   <header class="text-gray-700 body-font header headerProps" style="overflow-x: hidden;" data-aos="fade-down"
+      data-aos-delay="300">
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
          style="width: inherit; margin: 0px auto;">
          <a href="#">
@@ -90,14 +94,13 @@
       <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
          <div
             class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 animate__animated animate__fadeInDown"
-               style="font-size: 70px; line-height: 75px;">Hi, I'm
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+               style="font-size: 70px; line-height: 75px;" data-aos="fade-right">Hi, I'm
                <br><strong>Gavin Pereira</strong>
             </h1>
-            <div class="w-16 h-1 rounded-full animate__animated animate__fadeIn animate__slower niceGreenBG"
-               style="margin-bottom: 25px;"></div>
-            <p class="leading-relaxed  animate__animated animate__fadeInLeft animate__delay-0.9s"
-               style="font-size: 20.5px; margin-top: -50px;">
+            <div class="w-16 h-1 rounded-full niceGreenBG" style="margin-bottom: 25px;" data-aos="fade-right"></div>
+            <p class="leading-relaxed" style="font-size: 20.5px; margin-top: -50px;" data-aos="fade-right"
+               data-aos-delay="100">
 
                <br>
                Graphic / Web Designer
@@ -110,7 +113,7 @@
             </div>
          </div>
          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded animate__animated animate__fadeIn animate__slower" alt="hero"
+            <img class="object-cover object-center rounded" alt="hero" data-aos="fade-left" data-aos-delay="200"
                src="img/gavin.jpg" style="box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2); border-radius: 20px;">
          </div>
       </div>
@@ -119,7 +122,7 @@
 
 
 
-   <section id="gallerySection" style="padding-bottom: 50px;">
+   <section id="gallerySection" style="padding-bottom: 50px;" data-aos="fade-up" data-aos-delay="400">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" style="text-align: center;">Have a look
          at my work</h1>
       <div class="w-16 h-1 rounded-full niceGreenBG" style="margin: auto; margin-bottom: 25px;"></div>
@@ -258,7 +261,10 @@
       </div>
    </footer>
 
-
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
    <script src="js/script.js"></script>
 </body>
 
