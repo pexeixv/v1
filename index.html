@@ -225,14 +225,6 @@
          </div>
       </div>
    </section>
-   <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" style="text-align: center;">I have worked
-      with</h1>
-   <div class="w-16 h-1 rounded-full "
-      style="background-color: rgba(67, 243, 183, .92); margin: auto; margin-bottom: 25px;"></div>
-   <div class="tech-slideshow">
-      <div class="mover-1"></div>
-      <div class="mover-2"></div>
-   </div>
 
    <h1 style="display: none;">Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin
       Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin Pereira Gavin
@@ -242,6 +234,74 @@
 
 
 
+   <style>
+      .clients_inner {
+         padding: 1em 0;
+         width: 90%;
+         max-width: 700px;
+         margin: 0 auto;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         /* gap: 3em; */
+      }
+
+      .clients_inner>img {
+         height: 70px;
+         transition: 500ms;
+      }
+
+      .clients_inner>img:hover {
+
+         filter: invert(1);
+      }
+
+      @media screen and (max-width:830px) {
+         .clients_inner {
+            /* gap: 2em; */
+         }
+
+         .clients_inner>img {
+            height: 50px;
+         }
+      }
+
+      @media screen and (max-width:570px) {
+         .clients_inner {
+            /* gap: 1.5em; */
+         }
+
+         .clients_inner>img {
+            height: 40px;
+         }
+      }
+
+      @media screen and (max-width:420px) {
+         .clients_inner {
+            /* gap: 1em; */
+         }
+
+         .clients_inner>img {
+            height: 30px;
+         }
+      }
+   </style>
+
+   <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" style="text-align: center;">I have worked
+      with</h1>
+   <div class="w-16 h-1 rounded-full "
+      style="background-color: rgba(67, 243, 183, .92); margin: auto; margin-bottom: 25px;"></div>
+   <div class="clients">
+      <div class="clients_inner">
+         <img src="img/clients/adrpro.png">
+         <img src="img/clients/zb.png">
+         <img src="img/clients/4L.png">
+         <img src="img/clients/adrstudio.png">
+         <img src="img/clients/macmo.png">
+      </div>
+   </div>
+
+   </div>
 
 
 
