@@ -1,3 +1,7 @@
+# Gavin Pereira
+
+## Preview
 ![](img/preview.png)
 
-## New website accessible [here](https://gavinpereira.in)
+## This repo is now archived
+New website is accessible [here](https://gavinpereira.in)
